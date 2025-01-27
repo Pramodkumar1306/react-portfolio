@@ -1,0 +1,156 @@
+body {
+  background-color: #171717;
+}
+
+.outer-cont {
+  color: #fff;
+  margin-top: 60px;
+  margin-left: 8%;
+  width: 82.2%;
+  border-radius: 20px;
+  background: #272626;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid  #514f4f;;
+  position: relative;
+  overflow: hidden;
+  height: 185px;  /* Initial height */
+}
+
+.outer-cont.expanded {
+  height: 78vh;  /* Changed to exactly 83vh */
+  padding-bottom: 30px;
+}
+
+.corner-button {
+  position: absolute;
+  top: -1px;
+  right: 0.1px;
+  padding: 8px 16px;
+  border-radius: 0 20px 0 8px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 1000s ease;
+  z-index: 1;
+}
+
+.corner-button:hover {
+  background-color: #357abd;
+  transform: scale(1.05);
+}
+
+.content {
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: translateY(20px);
+  padding: 10px;
+}
+
+.content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-info {
+  margin-top: 20px;  /* Reduced from 40px for better fit */
+  display: flex;
+  flex-direction: column;
+  gap: 25px;  /* Increased gap for better spacing */
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    flex: 1;
+}
+
+.contact-item h4 {
+    margin-bottom: 8px;
+}
+
+.contact-item p {
+    margin-top: 0;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #4a90e2;
+}
+
+.contact-item span {
+  color: #e0e0e0;
+}
+.divider {
+    border: none;
+    height: 2px;
+    width: 85%;
+    background-color: #5c5959;
+    margin: 3px 0;
+    opacity: 0.3;
+    margin-left: 6%;
+}
+
+.content h4 {
+    color: #fff;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.content p {
+    color: #e0e0e0;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    color: #e0e0e0;
+    width: 20px;
+    margin-left: 120px;
+}
+.social-icons a {
+  color: #e0e0e0  ;
+  margin-left: 20px;
+  width: 40px;
+}
+
+.social-icon {
+    color: #4a90e2;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #357abd;
+    transform: translateY(-3px);
+}
+.content-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-box {
+  margin-top: 10px;
+  margin-left: 7px;
+    width: 120.99px;
+    height: 120.99px;
+    background-color: rgb(85, 83, 83);
+    border-radius: 30px;
+}
+
+.header-text {
+    flex: 1;
+}
