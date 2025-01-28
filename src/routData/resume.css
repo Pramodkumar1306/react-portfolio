@@ -1,3 +1,242 @@
-h1 {
-    color:white
+:root {
+    --primary-color: #4a90e2;
+    --text-primary: #fff;
+    --text-secondary: #888;
+    --bg-secondary: #1e1e1e;
+    --border-color: #333;
+    --transition: all 0.3s ease;
+}
+
+.resume-content {
+    padding: 20px;
+    color: var(--text-primary);
+}
+
+.resume-section {
+    margin-bottom: 40px;
+    background: var(--bg-secondary);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.resume-section:hover {
+    transform: translateY(-2px);
+    border-color: var(--primary-color);
+}
+
+.resume-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.resume-section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.objective {
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* Education styles */
+.education-list {
+    display: grid;
+    gap: 20px;
+}
+
+.education-item {
+    padding: 15px;
+    border-left: 3px solid var(--primary-color);
+    background: rgba(74, 144, 226, 0.1);
+    border-radius: 0 5px 5px 0;
+}
+
+.education-item h3 {
+    margin: 0 0 5px 0;
+    color: var(--text-primary);
+}
+
+.education-item p {
+    margin: 0;
+    color: var(--text-secondary);
+}
+
+.year {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* Skills styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-category h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category li {
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.skill-category li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+/* Projects styles */
+.projects-list {
+    display: grid;
+    gap: 20px;
+}
+
+.project-item {
+    padding: 20px;
+    background: rgba(74, 144, 226, 0.1);
+    border-radius: 5px;
+}
+
+.project-item h3 {
+    color: var(--primary-color);
+    margin: 0 0 10px 0;
+}
+
+.project-item p {
+    color: var(--text-secondary);
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+}
+
+.tech-stack {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* Social links */
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: var(--text-primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(74, 144, 226, 0.1);
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-section {
+        padding: 20px;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+}
+
+/* Add these styles to your existing CSS */
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.download-btn {
+    background: var(--primary-color);
+    color: var(--text-primary);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.download-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.download-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+.download-btn:active {
+    transform: translateY(1px);
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .download-btn {
+        width: 100%;
+        justify-content: center;
+    }
 }

@@ -8,7 +8,7 @@ const contactData = [
     {
         id: 1,
         title: 'Email:',
-        value: 'pramod@example.com',
+        value: 'pramod73kumar7415@gmail.com',
         icon: MdEmail
     },
     {

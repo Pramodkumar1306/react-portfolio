@@ -152,7 +152,11 @@
     }
     
     .header-text {
+        
         flex: 1;
+    }
+    .header-text > h1{
+        margin-bottom: 0;
     }
     
     .detail-row {
