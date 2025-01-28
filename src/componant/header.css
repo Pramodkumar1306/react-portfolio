@@ -11,7 +11,7 @@
         background: #272626;
         transition: all 0.3s ease;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        border: 1px solid  #514f4f;;
+        border: 1px solid  #514f4f;
         position: relative;
         overflow: hidden;
         height: 185px;  /* Initial height */
@@ -28,7 +28,7 @@
         right: 0.1px;
         padding: 8px 16px;
         border-radius: 0 20px 0 8px;
-        background-color: #4a90e2;
+        background-color: #615c5a;
         color: white;
         border: none;
         cursor: pointer;
@@ -37,7 +37,7 @@
     }
     
     .corner-button:hover {
-        background-color: #357abd;
+        background-color: #808387;
         transform: scale(1.05);
     }
     

@@ -1,12 +1,14 @@
 import React from 'react'
 import Header from './componant/header'
-import { Outlet } from 'react-router-dom'
+import ContentHead from './componant/mainHeader'
+
+
 
 export default function App() {
   return (
     <div>
       <Header/>
-      <Outlet />
+      <ContentHead/>
     </div>
   )
 }
