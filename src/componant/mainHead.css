@@ -14,10 +14,12 @@
 .box {
     margin-top: 30px;
     width: 82.8%;
-    height: 90vh;
+    min-height: 90vh;
+    height: auto;
     border: 1px solid var(--border-color);
     background: var(--bg-color);
     border-radius: var(--border-radius);
+    padding-bottom: 30px;
 }
 
 .bar {
@@ -65,4 +67,49 @@
     width: 100%;
     height: 2px;
     background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .bar {
+        width: 100%;
+        left: 0;
+        border-radius: 20px 20px 0 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .nav-links {
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .nav-item {
+        font-size: 1rem;
+        padding: 4px 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-item {
+        font-size: 0.9rem;
+        padding: 3px 6px;
+    }
+
+    .box {
+        width: 95%;
+    }
+}
+
+/* Add smooth transitions for responsive changes */
+.box, .bar, .outer-cont {
+    transition: all 0.3s ease;
 }

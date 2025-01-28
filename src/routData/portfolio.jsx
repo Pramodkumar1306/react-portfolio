@@ -3,7 +3,9 @@ import './portfolio.css'
 export default function portfolio() {
   return (
     <div>
-      <h1>portfolio</h1>
+      <div className="about-container">
+      <h1 className="about-title">Portfolio</h1>
+    </div>
     </div>
   )
 }

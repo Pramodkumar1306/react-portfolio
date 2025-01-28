@@ -3,7 +3,9 @@ import './resume.css'
 export default function resume() {
   return (
     <div>
-      <h1>resume</h1>
+      <div className="about-container">
+      <h1 className="about-title">Resume</h1>
+    </div>
     </div>
   )
 }

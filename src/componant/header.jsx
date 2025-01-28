@@ -28,7 +28,7 @@ const socialIcons = [
     {
         id: 2,
         icon: FaGithub,
-        link: 'https://github.com'
+        link: 'https://github.com/Pramodkumar1306?tab=repositories'
     },
     {
         id: 3,

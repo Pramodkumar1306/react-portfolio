@@ -1,3 +1,28 @@
-h1{
+h1 {
+    margin-top: 0;
     color: white;
+}
+
+.about-container {
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.about-title {
+    color: white;
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.about-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50%;  /* This makes it half-width */
+    height: 3px;
+    background-color: #4a90e2;  /* Matching the accent color */
+    border-radius: 2px;
 }
