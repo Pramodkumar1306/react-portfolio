@@ -240,3 +240,84 @@
         justify-content: center;
     }
 }
+
+/* Add these styles to your existing CSS */
+
+.achievements-scroll {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px 0;
+    /* Custom scrollbar styles */
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--bg-secondary);
+}
+
+/* Webkit scrollbar styles */
+.achievements-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.achievements-scroll::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 4px;
+}
+
+.achievements-scroll::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.achievements-container {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    min-width: min-content;
+}
+
+.achievement-card {
+    min-width: 280px;
+    padding: 20px;
+    background: rgba(74, 144, 226, 0.1);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    background: rgba(74, 144, 226, 0.15);
+}
+
+.achievement-card h3 {
+    color: var(--primary-color);
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.achievement-card p {
+    color: var(--text-secondary);
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Add smooth scroll behavior */
+.achievements-scroll {
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for cleaner look but keep functionality */
+@media (max-width: 768px) {
+    .achievements-scroll {
+        scrollbar-width: none; /* Firefox */
+    }
+    
+    .achievements-scroll::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+    .achievement-card {
+        min-width: 260px;
+    }
+}

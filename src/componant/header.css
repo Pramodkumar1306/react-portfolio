@@ -251,7 +251,9 @@
         }
 
         .corner-button {
+            margin-top: 133px;
             padding: 6px 12px;
+            border-radius: 0 0 0 0  ;
             font-size: 0.9rem;
         }
     }

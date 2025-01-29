@@ -44,6 +44,34 @@ const projects = [
         tech: "Java"
     }
 ];
+
+const achievements = [
+    {
+        title: "Web Development",
+        description: "Created responsive web applications using modern technologies"
+    },
+    {
+        title: "Problem Solving",
+        description: "Solved complex programming challenges efficiently"
+    },
+    {
+        title: "Team Work",
+        description: "Work With team And Manage projects with effective communication"
+    },
+    {
+        title: "UI/UX Design",
+        description: "Designed user-friendly interfaces for better experience"
+    },
+    {
+        title: "Database Management",
+        description: "Managed and optimized database operations"
+    },
+    {
+        title: "Project Management",
+        description: "Successfully delivered projects on time"
+    }
+];
+
 //downloading the resume
 export default function Resume() {
     const handleDownload = () => {
@@ -140,6 +168,20 @@ export default function Resume() {
                                 </div>
                             </div>
                         ))}
+                    </div>
+                </section>
+
+                <section className="resume-section">
+                    <h2>Achievements</h2>
+                    <div className="achievements-scroll">
+                        <div className="achievements-container">
+                            {achievements.map((achievement, index) => (
+                                <div key={index} className="achievement-card">
+                                    <h3>{achievement.title}</h3>
+                                    <p>{achievement.description}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </section>
 

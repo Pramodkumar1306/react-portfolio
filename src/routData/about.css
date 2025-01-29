@@ -26,3 +26,87 @@ h1 {
     background-color: #4a90e2;  /* Matching the accent color */
     border-radius: 2px;
 }
+/*  cart containt */
+.about-content {
+    padding: 20px;
+}
+
+.cards-scroll {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px 0;
+    /* Custom scrollbar styles */
+    scrollbar-width:thin;
+    scrollbar-color: #4a90e2 #1e1e1e;
+}
+
+/* Webkit scrollbar styles */
+.cards-scroll::-webkit-scrollbar {
+    height: 5px;
+    
+}
+
+.cards-scroll::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 4px;
+}
+
+.cards-scroll::-webkit-scrollbar-thumb {
+    background: #4a90e2;
+    border-radius: 4px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    min-width: min-content;
+}
+
+.about-card {
+    min-width: 280px;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-3px);
+    border-color: #4a90e2;
+    background: rgba(74, 144, 226, 0.1);
+}
+
+.about-card h3 {
+    color: #ae53c3;
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.about-card p {
+    color: #8d8686;
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Add smooth scroll behavior */
+.cards-scroll {
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for cleaner look on mobile but keep functionality */
+@media (max-width: 768px) {
+    .cards-scroll {
+        scrollbar-width: none; /* Firefox */
+    }
+    
+    .cards-scroll::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+    
+    .about-card {
+        min-width: 260px;
+    }
+}
