@@ -35,8 +35,9 @@ export default function Contact() {
             <div className="contact-content">
                 <div className="contact-form">
                     <h2>Send Message</h2>
-                    <form onSubmit={handleSubmit}>
+                    <form action="https://api.web3forms.com/submit" method="POST" onSubmit={handleSubmit}>
                         {/* Name Input */}
+                        <input type="hidden" name="access_key" value="844907f3-1326-447c-91d3-2aa2f093f074"></input>
                         <div className="form-group">
                             <input 
                                 type="text" 

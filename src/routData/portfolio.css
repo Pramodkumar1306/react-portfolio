@@ -85,6 +85,41 @@ h2 {
     border-top: 1px solid var(--border-color);
 }
 
+/* Add these styles for the project link button */
+.view-project-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: rgba(74, 144, 226, 0.1);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.view-project-btn:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.2);
+}
+
+.link-icon {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.view-project-btn:hover .link-icon {
+    transform: translateX(5px);
+}
+
+/* Update project card hover state */
+.project-card:hover .view-project-btn {
+    border-color: var(--primary-color);
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .portfolio-nav {
@@ -100,5 +135,10 @@ h2 {
     .projects-grid {
         grid-template-columns: 1fr;
         padding: 10px;
+    }
+
+    .view-project-btn {
+        width: 100%;
+        justify-content: center;
     }
 }

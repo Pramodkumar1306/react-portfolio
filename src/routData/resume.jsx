@@ -1,6 +1,7 @@
 import React from 'react'
 import './resume.css'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaExternalLinkAlt, FaDownload } from 'react-icons/fa'
+import resumePDF from '../assets/PramodKumar.pdf'  // Import the PDF file
 
 const education = [
     {
@@ -75,13 +76,11 @@ const achievements = [
 //downloading the resume
 export default function Resume() {
     const handleDownload = () => {
-        // Replace this URL with your actual resume PDF URL
-        const resumeUrl = "/pramod_kumar_resume.pdf";
-        
         // Create a link element
         const link = document.createElement('a');
-        link.href = resumeUrl;
-        link.download = 'pramod_kumar_resume.pdf';
+        link.href = resumePDF;  // Use the imported PDF
+        link.download = 'PramodKumar.pdf';  // Name for the downloaded file
+        
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -92,7 +91,8 @@ export default function Resume() {
             <div className="about-container">
                 <h1 className="about-title">Resume</h1>
                 <button onClick={handleDownload} className="download-btn">
-                    Download Resume
+                    <FaDownload className="download-icon" />
+                    <span>Download Resume</span>
                 </button>
             </div>
 
@@ -186,13 +186,27 @@ export default function Resume() {
                 </section>
 
                 <section className="resume-section">
-                    <h2>Connect</h2>
+                    <h2>Connect With Me</h2>
                     <div className="social-links">
-                        <a href="https://github.com/Pramodkumar1306" target="_blank" rel="noopener noreferrer">
-                            <FaGithub /> GitHub
+                        <a 
+                            href="https://github.com/Pramodkumar1306" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="social-link github"
+                        >
+                            <FaGithub className="social-icon" />
+                            <span>GitHub</span>
+                            <FaExternalLinkAlt className="external-icon" />
                         </a>
-                        <a href="https://www.linkedin.com/in/pramod-kumar-a7a97a223" target="_blank" rel="noopener noreferrer">
-                            <FaLinkedin /> LinkedIn
+                        <a 
+                            href="https://www.linkedin.com/in/pramod-kumar-a7a97a223" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="social-link linkedin"
+                        >
+                            <FaLinkedin className="social-icon" />
+                            <span>LinkedIn</span>
+                            <FaExternalLinkAlt className="external-icon" />
                         </a>
                     </div>
                 </section>

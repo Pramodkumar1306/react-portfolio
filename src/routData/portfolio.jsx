@@ -1,10 +1,18 @@
 import React, { useState } from 'react'
 import './portfolio.css'
+import { FaExternalLinkAlt } from 'react-icons/fa'
 
 const projects = {
     all: [
         {
-            title: "E-Commerce Website",
+            title: "SQL Join Visualization",
+            description: "An interactive React component that helps students better understand SQL JOIN concepts through visual representation. This educational tool demonstrates different types of SQL joins (INNER, LEFT, RIGHT, FULL) with clear examples and interactive elements.",
+            tech: "React, CSS, JavaScript",
+            category: "component",
+            link: "https://comfy-sable-0cd59b.netlify.app/"
+        },
+        {
+            title: "try",
             description: "Online platform for medals and trophies",
             tech: "HTML, CSS, JavaScript, Java, SQL",
             category: "web"
@@ -68,10 +76,23 @@ export default function Portfolio() {
                 <div className="projects-grid">
                     {filteredProjects.map((project, index) => (
                         <div key={index} className="project-card">
-                            <h3>{project.title}</h3>
-                            <p>{project.description}</p>
-                            <div className="tech-stack">
-                                <strong>Tech Stack:</strong> {project.tech}
+                            <div className="project-content">
+                                <h3>{project.title}</h3>
+                                <p>{project.description}</p>
+                                <div className="tech-stack">
+                                    <strong>Tech Stack:</strong> {project.tech}
+                                </div>
+                                {project.link && (
+                                    <a 
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="view-project-btn"
+                                    >
+                                        <span>View Project</span>
+                                        <FaExternalLinkAlt className="link-icon" />
+                                    </a>
+                                )}
                             </div>
                         </div>
                     ))}
