@@ -2,7 +2,8 @@ import React from 'react'
 import './about.css'
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaBootstrap, FaJava } from 'react-icons/fa'
 import { SiTailwindcss, SiOracle } from 'react-icons/si'
-import profilePhoto from '../assets/photo.jpg';  // Add this at the top with other imports
+// /import profilePhoto from '../assets/photo.jpg';
+  // Add this at the top with other imports
 const aboutCards = [
     {
         title: "Fast Learner",
@@ -87,7 +88,7 @@ export default function About() {
             </div>
 
             <div className="intro-section">
-                <div className="profile-section">
+                {/* <div className="profile-section">
                     <div className="profile-image-container">
                     <img 
                             src={profilePhoto}
@@ -96,7 +97,7 @@ export default function About() {
                         />
                         <div className="image-overlay"></div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="intro-text">
                     <h2>Hi, I'm <span className="highlight">Pramod</span> 👋</h2>

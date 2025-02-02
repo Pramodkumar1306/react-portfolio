@@ -3,6 +3,7 @@ import './header.css'
 import { IoLogoLinkedin } from "react-icons/io"
 import { FaGithub, FaInstagram } from "react-icons/fa6"
 import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md"
+// import faceLogo from '../assets/faceLogo.png'
 
 const contactData = [
     {
@@ -50,7 +51,9 @@ export default function header() {
             </button>
             
             <div className="content-header">
-                <div className="profile-box"></div>
+                <div className="profile-box">
+                    {/* <img src="" alt="Pramod Kumar" className="profile-image" /> */}
+                </div>
                 <div className="header-text">
                     <h1>Pramod Kumar</h1>
                     <h5>Web Developer</h5>
