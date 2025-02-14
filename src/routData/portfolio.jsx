@@ -12,10 +12,11 @@ const projects = {
             link: "https://comfy-sable-0cd59b.netlify.app/"
         },
         {
-            title: "try",
-            description: "Online platform for medals and trophies",
-            tech: "HTML, CSS, JavaScript, Java, SQL",
-            category: "web"
+            title: "OOP's Project",
+            description: "This project is a comprehensive demonstration of Object-Oriented Programming (OOP) principles, covering all four pillars: Encapsulation, Abstraction, Inheritance, and Polymorphism. It is developed in Java, utilizing classes, objects, and real-world scenarios to showcase OOP concepts effectively.",
+            tech: "React , CSS, JavaScript, tailwindcss",
+            category: "component",
+            link: "https://oop-s-pramods-projects-79bc2cd2.vercel.app/"
         },
         {
             title: "IOT Door Lock",
