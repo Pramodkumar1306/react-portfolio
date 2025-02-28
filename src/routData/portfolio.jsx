@@ -12,6 +12,13 @@ const projects = {
             link: "https://comfy-sable-0cd59b.netlify.app/"
         },
         {
+            title: "Selection Sort Visualization",
+            description: "I developed a React component that showcases the Selection Sort algorithm with interactive visualization. It highlights the selection process step by step, making it easy to understand.",
+            tech: "React, CSS, JavaScript",
+            category: "component",
+            link: "https://selection-sort-ten.vercel.app/"
+        },
+        {
             title: "OOP's Project",
             description: "This project is a comprehensive demonstration of Object-Oriented Programming (OOP) principles, covering all four pillars: Encapsulation, Abstraction, Inheritance, and Polymorphism. It is developed in Java, utilizing classes, objects, and real-world scenarios to showcase OOP concepts effectively.",
             tech: "React , CSS, JavaScript, tailwindcss",

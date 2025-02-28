@@ -1,7 +1,7 @@
 import React from 'react'
 import './resume.css'
 import { FaGithub, FaLinkedin, FaExternalLinkAlt, FaDownload } from 'react-icons/fa'
-import resumePDF from '../assets/PramodKumar.pdf'  // Import the PDF file
+import resumePDF from '../assets/PramodKumarWebDevloper.pdf'  // Import the PDF file
 
 const education = [
     {
