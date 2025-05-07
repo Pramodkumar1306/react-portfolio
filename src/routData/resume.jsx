@@ -79,7 +79,7 @@ export default function Resume() {
         // Create a link element
         const link = document.createElement('a');
         link.href = resumePDF;  // Use the imported PDF
-        link.download = 'PramodKumar.pdf';  // Name for the downloaded file
+        link.download = 'PramodKumarResume.pdf';  // Name for the downloaded file
         
         document.body.appendChild(link);
         link.click();
