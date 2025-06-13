@@ -26,6 +26,12 @@ const projects = {
             link: "https://oop-s-pramods-projects-79bc2cd2.vercel.app/"
         },
         {
+            "title": "MERN-Based Expense Tracking System",
+            "description": "A full-stack web application that helps contractors monitor and manage their site-related expenses efficiently. Built using the MERN stack, it offers a user-friendly interface for recording, categorizing, and reviewing spending.",
+            "category": "web",
+            "link": "https://mern-frontend-coral.vercel.app/"
+        },
+        {
             title: "IOT Door Lock",
             description: "RFID and KeyPad based door lock system",
             tech: "Arduino, Java",
